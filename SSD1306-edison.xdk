@@ -1,0 +1,135 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "creationData": {
+      "type": "com.intel.xdk.projecttype.iotapp",
+      "src": "blankProject",
+      "projectGuid": "cccb9cfa-5a70-44bd-bdae-8ade3f2f1dde",
+      "lastModifiedDate": 1449133580668,
+      "creationDate": 1396719896484,
+      "projectTypeName": "com.intel.xdk.projecttype.iotapp"
+    },
+    "sourceDirectory": "",
+    "startFile": "main.js",
+    "projectFiles": {},
+    "projectDirectories": {
+      "xdk": {
+        "settings": {
+          "project": {
+            "XDK-generated": "true"
+          }
+        }
+      }
+    },
+    "libraries": [],
+    "serviceMethods": [],
+    "cordovaPluginsDirectory": "plugins",
+    "cordovaPlugins": [],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "runtime_": "Cordova 3.x",
+        "name_": "Android",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "",
+        "appID_": "",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "3.3.0",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0"
+      },
+      "Android-Crosswalk": {
+        "platform_": "android",
+        "runtime_": "Crosswalk with Cordova 3.x",
+        "name_": "Android-Crosswalk",
+        "preferences_": {},
+        "isActive_": true,
+        "appName_": "Android-Crosswalk",
+        "appID_": "Android-Crosswalk",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "3.3.0",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0"
+      },
+      "ios": {
+        "platform_": "ios",
+        "runtime_": "Cordova 3.x",
+        "name_": "ios",
+        "preferences_": null,
+        "isActive_": true,
+        "appName_": "",
+        "appID_": "",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "3.3.0",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0"
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "runtime_": "Cordova 3.x",
+        "name_": "Windows8",
+        "preferences_": null,
+        "isActive_": true,
+        "appName_": "",
+        "appID_": "",
+        "appAccess_": {
+          "mode": "legacy",
+          "network": [
+            "*"
+          ],
+          "intents": [],
+          "navigation": []
+        },
+        "icons_": [],
+        "splashes_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "iosProvs_": [],
+        "cordovaCLIVersion_": "3.3.0",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0.0"
+      }
+    },
+    "gameAssetDirectory": "asset",
+    "gameMetadata": {},
+    "testDirectory": "test",
+    "projectTags": []
+  }
+}

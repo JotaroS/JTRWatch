@@ -1,0 +1,152 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android"
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "Adafruit_GFX.js": {
+        "previousModTime": 1449457846000,
+        "modified": 1449457846000,
+        "seen": true,
+        "name": "Adafruit_GFX.js"
+      },
+      "Edison.js": {
+        "previousModTime": 1410656701000,
+        "modified": 1410656701000,
+        "seen": true,
+        "name": "Edison.js"
+      },
+      "SSD1306-edison.xdk": {
+        "previousModTime": 1449133580000,
+        "modified": 1449133580000,
+        "seen": true,
+        "name": "SSD1306-edison.xdk"
+      },
+      "SSD1306-edison.xdke": {
+        "previousModTime": 1449457850000,
+        "modified": 1449457850000,
+        "seen": true,
+        "name": "SSD1306-edison.xdke"
+      },
+      "SSD1306-edison_1.1.0.xdk_bak": {
+        "previousModTime": 1449133580000,
+        "modified": 1449133580000,
+        "seen": true,
+        "name": "SSD1306-edison_1.1.0.xdk_bak"
+      },
+      "SSD1306-edison_1.1.0.xdke_bak": {
+        "previousModTime": 1449133580000,
+        "modified": 1449133580000,
+        "seen": true,
+        "name": "SSD1306-edison_1.1.0.xdke_bak"
+      },
+      "glcdfont.js": {
+        "previousModTime": 1396535760000,
+        "modified": 1396535760000,
+        "seen": true,
+        "name": "glcdfont.js"
+      },
+      "main.js": {
+        "previousModTime": 1449457775000,
+        "modified": 1449457775000,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1411486339000,
+        "modified": 1411486339000,
+        "seen": true,
+        "name": "package.json"
+      },
+      "ssd1306.js": {
+        "previousModTime": 1409143845000,
+        "modified": 1409143845000,
+        "seen": true,
+        "name": "ssd1306.js"
+      },
+      "ssd1306_h.js": {
+        "previousModTime": 1396721384000,
+        "modified": 1396721384000,
+        "seen": true,
+        "name": "ssd1306_h.js"
+      },
+      "images/1-intel-logo.png": {
+        "previousModTime": 1396906271000,
+        "modified": 1396906271000,
+        "seen": true,
+        "name": "images/1-intel-logo.png"
+      },
+      "images/edison-logo.png": {
+        "previousModTime": 1409145419000,
+        "modified": 1409145419000,
+        "seen": true,
+        "name": "images/edison-logo.png"
+      },
+      "images/node-logo.png": {
+        "previousModTime": 1396906244000,
+        "modified": 1396906244000,
+        "seen": true,
+        "name": "images/node-logo.png"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1449133580000,
+        "modified": 1449133580000,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "images/jtrwatch.png": {
+        "previousModTime": 1449214115000,
+        "modified": 1449214115000,
+        "seen": true,
+        "name": "images/jtrwatch.png"
+      },
+      "Images/1-intel-logo.png": {
+        "previousModTime": 1396906271000,
+        "modified": 1396906271000,
+        "seen": true,
+        "name": "Images/1-intel-logo.png"
+      },
+      "Images/edison-logo.png": {
+        "previousModTime": 1409145419000,
+        "modified": 1409145419000,
+        "seen": true,
+        "name": "Images/edison-logo.png"
+      },
+      "Images/node-logo.png": {
+        "previousModTime": 1396906244000,
+        "modified": 1396906244000,
+        "seen": true,
+        "name": "Images/node-logo.png"
+      },
+      "Images/jotaro_w.png": {
+        "previousModTime": 1449226324000,
+        "modified": 1449226324000,
+        "seen": true,
+        "name": "Images/jotaro_w.png"
+      },
+      "Images/jtr1.png": {
+        "previousModTime": 1449226324000,
+        "modified": 1449226324000,
+        "seen": true,
+        "name": "Images/jtr1.png"
+      },
+      "images/jtr.png": {
+        "previousModTime": 1449225372000,
+        "modified": 1449225372000,
+        "seen": true,
+        "name": "images/jtr.png"
+      },
+      "images/jtr-1.png": {
+        "previousModTime": 1449226849000,
+        "modified": 1449226849000,
+        "seen": true,
+        "name": "images/jtr-1.png"
+      }
+    },
+    "boardFileStatus": {}
+  }
+}

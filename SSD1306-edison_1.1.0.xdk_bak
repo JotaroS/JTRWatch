@@ -1,0 +1,313 @@
+{
+  "project": {
+    "projectSettingsVersion": "1.1",
+    "creationData": {
+      "type": "com.intel.xdk.projecttype.iotapp",
+      "src": "blankProject",
+      "projectGuid": "cccb9cfa-5a70-44bd-bdae-8ade3f2f1dde",
+      "lastModifiedDate": 1403106965147,
+      "creationDate": 1396719896484,
+      "projectTypeName": "com.intel.xdk.projecttype.iotapp"
+    },
+    "sourceDirectory": "",
+    "startFile": "main.js",
+    "projectFiles": {},
+    "projectDirectories": {},
+    "libraries": [
+      {
+        "name": "Cordova",
+        "version": "2.9.0",
+        "data": {
+          "default": true
+        }
+      },
+      {
+        "name": "intelXDK",
+        "version": "4.0.0",
+        "data": {
+          "default": true
+        }
+      }
+    ],
+    "serviceMethods": [],
+    "cordovaPluginsDirectory": "plugins",
+    "cordovaPlugins": [
+      {
+        "id": "org.apache.cordova.device-motion",
+        "version": "0.2.4",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.camera",
+        "version": "0.2.9",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.media-capture",
+        "version": "0.2.8",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.device-orientation",
+        "version": "0.3.6",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.network-information",
+        "version": "0.2.8",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.contacts",
+        "version": "0.2.8",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.device",
+        "version": "0.2.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.battery-status",
+        "version": "0.2.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.file",
+        "version": "0.2.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.geolocation",
+        "version": "0.3.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.globalization",
+        "version": "0.2.7",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.inappbrowser",
+        "version": "0.3.0",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.media",
+        "version": "0.2.8",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.dialogs",
+        "version": "0.2.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.vibration",
+        "version": "0.3.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "org.apache.cordova.splashscreen",
+        "version": "0.2.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.acceleration",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.audio",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.cache",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.camera",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.contacts",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.debug",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.facebook",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.file",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.geolocation",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.notification",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.oauth",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      },
+      {
+        "id": "intel.xdk.player",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {}
+      }
+    ],
+    "buildConfigurations": {
+      "Android": {
+        "platform_": "android",
+        "name_": "Android",
+        "preferences_": null,
+        "isActive_": true,
+        "appName_": "",
+        "appID_": "",
+        "appAccess_": "*",
+        "icons_": [],
+        "splashes_": [],
+        "iosProvs_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "3.3",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0",
+        "runtime_": "Cordova 3.x"
+      },
+      "Android-Crosswalk": {
+        "platform_": "android",
+        "name_": "Android-Crosswalk",
+        "preferences_": null,
+        "isActive_": true,
+        "appName_": "Android-Crosswalk",
+        "appID_": "Android-Crosswalk",
+        "appAccess_": "*",
+        "icons_": [],
+        "splashes_": [],
+        "iosProvs_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "3.3",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0",
+        "runtime_": "Crosswalk with Cordova 3.x"
+      },
+      "ios": {
+        "platform_": "ios",
+        "name_": "ios",
+        "preferences_": null,
+        "isActive_": true,
+        "appName_": "",
+        "appID_": "",
+        "appAccess_": "*",
+        "icons_": [],
+        "splashes_": [],
+        "iosProvs_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "3.3",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0",
+        "runtime_": "Cordova 3.x"
+      },
+      "Windows8": {
+        "platform_": "windows8",
+        "name_": "Windows8",
+        "preferences_": null,
+        "isActive_": true,
+        "appName_": "",
+        "appID_": "",
+        "appAccess_": "*",
+        "icons_": [],
+        "splashes_": [],
+        "iosProvs_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "3.3",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0.0",
+        "runtime_": "Cordova 3.x"
+      },
+      "WindowsPhone8": {
+        "platform_": "wp8",
+        "name_": "WindowsPhone8",
+        "preferences_": null,
+        "isActive_": true,
+        "appName_": "",
+        "appID_": "",
+        "appAccess_": "*",
+        "icons_": [],
+        "splashes_": [],
+        "iosProvs_": [],
+        "addlPermissions_": "",
+        "excludedLibraries_": "",
+        "cordovaCLIVersion_": "3.3",
+        "crosswalkVersion_": "stable",
+        "appVersion_": "1.0.0.0",
+        "runtime_": "Cordova 3.x"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "SSD1306",
+  "description": "SSD1306 I2C driver",
+  "version": "0.0.0",
+  "main": "main.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "pngjs":"0.4.0",
+    "i2c":"http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed"
+  }
+}
