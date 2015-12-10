@@ -4,9 +4,7 @@ var txt = "result is:"
 function handleresult(result){
     r = result;
     txt=txt+r;
-    console.log(txt)
-
-
+    console.log(txt);
 }
 function returnResult(err,result){
     console.log(result);

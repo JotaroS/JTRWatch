@@ -1,0 +1,925 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'i2c' ]
+2 info using npm@3.3.12
+3 info using node@v5.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData i2c@http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+8 silly fetchOtherPackageData i2c@http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+9 silly cache add args [ 'i2c@http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed',
+9 silly cache add   null ]
+10 verbose cache add spec i2c@http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'i2c@http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'i2c',
+11 silly cache add   rawSpec: 'http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed',
+11 silly cache add   spec: 'http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed',
+11 silly cache add   type: 'remote' }
+12 silly mapToRegistry name i2c@http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/i2c@http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+16 verbose addRemoteTarball http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed not in flight; adding
+17 verbose addRemoteTarball [ 'http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed',
+17 verbose addRemoteTarball   null ]
+18 info retry fetch attempt 1 at 22:57:10
+19 info attempt registry request try #1 at 22:57:10
+20 http fetch GET http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+21 verbose request id 3424112073797b7f
+22 http fetch 200 http://github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+23 silly fetchAndShaCheck shasum a15fa9203a9909335693a3c7bc761193e5773210
+24 verbose addTmpTarball /var/folders/xg/zp0t84ld2xb7fwwn0x4cl2rm0000gn/T/npm-2935-7e28c136/github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed not in flight; adding
+25 verbose addTmpTarball validating metadata from /var/folders/xg/zp0t84ld2xb7fwwn0x4cl2rm0000gn/T/npm-2935-7e28c136/github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+26 verbose tar unpack /var/folders/xg/zp0t84ld2xb7fwwn0x4cl2rm0000gn/T/npm-2935-7e28c136/github.com/kelly/node-i2c/tarball/289f0ed1b70e068c3786ba828d8c2feebd3e72ed
+27 verbose tar unpacking to /var/folders/xg/zp0t84ld2xb7fwwn0x4cl2rm0000gn/T/npm-2935-7e28c136/unpack-9ff18e45cf709ff2bffe4734a0260d62
+28 silly gentlyRm /var/folders/xg/zp0t84ld2xb7fwwn0x4cl2rm0000gn/T/npm-2935-7e28c136/unpack-9ff18e45cf709ff2bffe4734a0260d62 is being purged
+29 verbose gentlyRm don't care about contents; nuking /var/folders/xg/zp0t84ld2xb7fwwn0x4cl2rm0000gn/T/npm-2935-7e28c136/unpack-9ff18e45cf709ff2bffe4734a0260d62
+30 silly gunzTarPerm modes [ '755', '644' ]
+31 silly gunzTarPerm extractEntry
+32 silly gunzTarPerm modified mode [ '', 509, 493 ]
+33 silly gunzTarPerm extractEntry .gitignore
+34 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+35 silly gunzTarPerm extractEntry LICENSE
+36 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+37 silly gunzTarPerm extractEntry README.md
+38 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+39 silly gunzTarPerm extractEntry binding.gyp
+40 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+41 silly gunzTarPerm extractEntry examples/
+42 silly gunzTarPerm modified mode [ 'examples/', 509, 493 ]
+43 silly gunzTarPerm extractEntry examples/accelerometer/
+44 silly gunzTarPerm modified mode [ 'examples/accelerometer/', 509, 493 ]
+45 silly gunzTarPerm extractEntry examples/accelerometer/accel.coffee
+46 silly gunzTarPerm modified mode [ 'examples/accelerometer/accel.coffee', 436, 420 ]
+47 silly gunzTarPerm extractEntry examples/blinkm/
+48 silly gunzTarPerm modified mode [ 'examples/blinkm/', 509, 493 ]
+49 silly gunzTarPerm extractEntry examples/blinkm/blinkm.coffee
+50 silly gunzTarPerm modified mode [ 'examples/blinkm/blinkm.coffee', 436, 420 ]
+51 silly gunzTarPerm extractEntry lib/
+52 silly gunzTarPerm modified mode [ 'lib/', 509, 493 ]
+53 silly gunzTarPerm extractEntry lib/i2c.coffee
+54 silly gunzTarPerm modified mode [ 'lib/i2c.coffee', 436, 420 ]
+55 silly gunzTarPerm extractEntry main.js
+56 silly gunzTarPerm modified mode [ 'main.js', 436, 420 ]
+57 silly gunzTarPerm extractEntry package.json
+58 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+59 silly gunzTarPerm extractEntry src/
+60 silly gunzTarPerm modified mode [ 'src/', 509, 493 ]
+61 silly gunzTarPerm extractEntry src/i2c-dev.c
+62 silly gunzTarPerm modified mode [ 'src/i2c-dev.c', 436, 420 ]
+63 silly gunzTarPerm extractEntry src/i2c-dev.h
+64 silly gunzTarPerm modified mode [ 'src/i2c-dev.h', 436, 420 ]
+65 silly gunzTarPerm extractEntry src/i2c.cc
+66 silly gunzTarPerm modified mode [ 'src/i2c.cc', 436, 420 ]
+67 silly cache afterAdd i2c@0.1.4
+68 verbose afterAdd /Users/shigeyamajoutarou/.npm/i2c/0.1.4/package/package.json not in flight; writing
+69 verbose afterAdd /Users/shigeyamajoutarou/.npm/i2c/0.1.4/package/package.json written
+70 silly install normalizeTree
+71 silly loadCurrentTree Finishing
+72 silly loadIdealTree Starting
+73 silly install loadIdealTree
+74 silly cloneCurrentTree Starting
+75 silly install cloneCurrentTreeToIdealTree
+76 silly cloneCurrentTree Finishing
+77 silly loadShrinkwrap Starting
+78 silly install loadShrinkwrap
+79 silly loadShrinkwrap Finishing
+80 silly loadAllDepsIntoIdealTree Starting
+81 silly install loadAllDepsIntoIdealTree
+82 silly resolveWithNewModule i2c@0.1.4 checking installable status
+83 silly fetchNamedPackageData bindings
+84 silly mapToRegistry name bindings
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npmjs.org/
+87 silly mapToRegistry uri https://registry.npmjs.org/bindings
+88 silly fetchNamedPackageData underscore
+89 silly mapToRegistry name underscore
+90 silly mapToRegistry using default registry
+91 silly mapToRegistry registry https://registry.npmjs.org/
+92 silly mapToRegistry uri https://registry.npmjs.org/underscore
+93 silly fetchNamedPackageData coffee-script
+94 silly mapToRegistry name coffee-script
+95 silly mapToRegistry using default registry
+96 silly mapToRegistry registry https://registry.npmjs.org/
+97 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+98 silly fetchNamedPackageData repl
+99 silly mapToRegistry name repl
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry uri https://registry.npmjs.org/repl
+103 verbose request uri https://registry.npmjs.org/bindings
+104 verbose request no auth needed
+105 info attempt registry request try #1 at 22:57:13
+106 verbose etag "2RXG5K4RRQWEOOFOAOOKVPOZR"
+107 http request GET https://registry.npmjs.org/bindings
+108 verbose request uri https://registry.npmjs.org/coffee-script
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 22:57:13
+111 verbose etag "C8UG6UD39N0AES6OMKWUQEFC3"
+112 http request GET https://registry.npmjs.org/coffee-script
+113 verbose request uri https://registry.npmjs.org/underscore
+114 verbose request no auth needed
+115 info attempt registry request try #1 at 22:57:13
+116 verbose etag "CJ8R9PDKZ7HTCG4B6CM0T1M6K"
+117 http request GET https://registry.npmjs.org/underscore
+118 verbose request uri https://registry.npmjs.org/repl
+119 verbose request no auth needed
+120 info attempt registry request try #1 at 22:57:13
+121 verbose etag "B2YIZ9SHIPM70CR4ZZI8WJ13O"
+122 http request GET https://registry.npmjs.org/repl
+123 http 304 https://registry.npmjs.org/bindings
+124 verbose headers { date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+124 verbose headers   via: '1.1 varnish',
+124 verbose headers   'cache-control': 'max-age=60',
+124 verbose headers   etag: '"2RXG5K4RRQWEOOFOAOOKVPOZR"',
+124 verbose headers   age: '26',
+124 verbose headers   connection: 'keep-alive',
+124 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
+124 verbose headers   'x-cache': 'HIT',
+124 verbose headers   'x-cache-hits': '1',
+124 verbose headers   'x-timer': 'S1449755833.346960,VS0,VE0',
+124 verbose headers   vary: 'Accept' }
+125 silly get cb [ 304,
+125 silly get   { date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+125 silly get     via: '1.1 varnish',
+125 silly get     'cache-control': 'max-age=60',
+125 silly get     etag: '"2RXG5K4RRQWEOOFOAOOKVPOZR"',
+125 silly get     age: '26',
+125 silly get     connection: 'keep-alive',
+125 silly get     'x-served-by': 'cache-nrt6129-NRT',
+125 silly get     'x-cache': 'HIT',
+125 silly get     'x-cache-hits': '1',
+125 silly get     'x-timer': 'S1449755833.346960,VS0,VE0',
+125 silly get     vary: 'Accept' } ]
+126 verbose etag https://registry.npmjs.org/bindings from cache
+127 verbose get saving bindings to /Users/shigeyamajoutarou/.npm/registry.npmjs.org/bindings/.cache.json
+128 http 304 https://registry.npmjs.org/underscore
+129 verbose headers { date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+129 verbose headers   via: '1.1 varnish',
+129 verbose headers   'cache-control': 'max-age=60',
+129 verbose headers   etag: '"CJ8R9PDKZ7HTCG4B6CM0T1M6K"',
+129 verbose headers   age: '37',
+129 verbose headers   connection: 'keep-alive',
+129 verbose headers   'x-served-by': 'cache-nrt6124-NRT',
+129 verbose headers   'x-cache': 'HIT',
+129 verbose headers   'x-cache-hits': '1',
+129 verbose headers   'x-timer': 'S1449755833.346142,VS0,VE0',
+129 verbose headers   vary: 'Accept' }
+130 silly get cb [ 304,
+130 silly get   { date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+130 silly get     via: '1.1 varnish',
+130 silly get     'cache-control': 'max-age=60',
+130 silly get     etag: '"CJ8R9PDKZ7HTCG4B6CM0T1M6K"',
+130 silly get     age: '37',
+130 silly get     connection: 'keep-alive',
+130 silly get     'x-served-by': 'cache-nrt6124-NRT',
+130 silly get     'x-cache': 'HIT',
+130 silly get     'x-cache-hits': '1',
+130 silly get     'x-timer': 'S1449755833.346142,VS0,VE0',
+130 silly get     vary: 'Accept' } ]
+131 verbose etag https://registry.npmjs.org/underscore from cache
+132 verbose get saving underscore to /Users/shigeyamajoutarou/.npm/registry.npmjs.org/underscore/.cache.json
+133 silly resolveWithNewModule bindings@1.1.1 checking installable status
+134 silly cache add args [ 'bindings@~1.1.0', null ]
+135 verbose cache add spec bindings@~1.1.0
+136 silly cache add parsed spec Result {
+136 silly cache add   raw: 'bindings@~1.1.0',
+136 silly cache add   scope: null,
+136 silly cache add   name: 'bindings',
+136 silly cache add   rawSpec: '~1.1.0',
+136 silly cache add   spec: '>=1.1.0 <1.2.0',
+136 silly cache add   type: 'range' }
+137 silly addNamed bindings@>=1.1.0 <1.2.0
+138 verbose addNamed ">=1.1.0 <1.2.0" is a valid semver range for bindings
+139 silly addNameRange { name: 'bindings', range: '>=1.1.0 <1.2.0', hasData: false }
+140 silly mapToRegistry name bindings
+141 silly mapToRegistry using default registry
+142 silly mapToRegistry registry https://registry.npmjs.org/
+143 silly mapToRegistry uri https://registry.npmjs.org/bindings
+144 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+145 silly resolveWithNewModule underscore@1.2.4 checking installable status
+146 silly cache add args [ 'underscore@1.2.4', null ]
+147 verbose cache add spec underscore@1.2.4
+148 silly cache add parsed spec Result {
+148 silly cache add   raw: 'underscore@1.2.4',
+148 silly cache add   scope: null,
+148 silly cache add   name: 'underscore',
+148 silly cache add   rawSpec: '1.2.4',
+148 silly cache add   spec: '1.2.4',
+148 silly cache add   type: 'version' }
+149 silly addNamed underscore@1.2.4
+150 verbose addNamed "1.2.4" is a plain semver version for underscore
+151 silly mapToRegistry name underscore
+152 silly mapToRegistry using default registry
+153 silly mapToRegistry registry https://registry.npmjs.org/
+154 silly mapToRegistry uri https://registry.npmjs.org/underscore
+155 verbose addNameVersion registry:https://registry.npmjs.org/underscore not in flight; fetching
+156 verbose get https://registry.npmjs.org/bindings not expired, no request
+157 silly addNameRange number 2 { name: 'bindings', range: '>=1.1.0 <1.2.0', hasData: true }
+158 silly addNameRange versions [ 'bindings',
+158 silly addNameRange   [ '0.0.1',
+158 silly addNameRange     '0.1.0',
+158 silly addNameRange     '0.1.1',
+158 silly addNameRange     '0.2.0',
+158 silly addNameRange     '0.2.1',
+158 silly addNameRange     '0.2.2',
+158 silly addNameRange     '0.2.3',
+158 silly addNameRange     '0.2.4',
+158 silly addNameRange     '0.3.0',
+158 silly addNameRange     '0.4.0',
+158 silly addNameRange     '1.0.0',
+158 silly addNameRange     '1.1.0',
+158 silly addNameRange     '1.1.1',
+158 silly addNameRange     '1.2.0',
+158 silly addNameRange     '1.2.1' ] ]
+159 silly addNamed bindings@1.1.1
+160 verbose addNamed "1.1.1" is a plain semver version for bindings
+161 verbose get https://registry.npmjs.org/underscore not expired, no request
+162 silly cache afterAdd bindings@1.1.1
+163 verbose afterAdd /Users/shigeyamajoutarou/.npm/bindings/1.1.1/package/package.json not in flight; writing
+164 silly cache afterAdd underscore@1.2.4
+165 verbose afterAdd /Users/shigeyamajoutarou/.npm/underscore/1.2.4/package/package.json not in flight; writing
+166 verbose afterAdd /Users/shigeyamajoutarou/.npm/underscore/1.2.4/package/package.json written
+167 verbose afterAdd /Users/shigeyamajoutarou/.npm/bindings/1.1.1/package/package.json written
+168 http 304 https://registry.npmjs.org/repl
+169 verbose headers { date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+169 verbose headers   via: '1.1 varnish',
+169 verbose headers   'cache-control': 'max-age=60',
+169 verbose headers   etag: '"B2YIZ9SHIPM70CR4ZZI8WJ13O"',
+169 verbose headers   age: '0',
+169 verbose headers   connection: 'keep-alive',
+169 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
+169 verbose headers   'x-cache': 'MISS',
+169 verbose headers   'x-cache-hits': '0',
+169 verbose headers   'x-timer': 'S1449755833.342577,VS0,VE361',
+169 verbose headers   vary: 'Accept' }
+170 silly get cb [ 304,
+170 silly get   { date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+170 silly get     via: '1.1 varnish',
+170 silly get     'cache-control': 'max-age=60',
+170 silly get     etag: '"B2YIZ9SHIPM70CR4ZZI8WJ13O"',
+170 silly get     age: '0',
+170 silly get     connection: 'keep-alive',
+170 silly get     'x-served-by': 'cache-nrt6129-NRT',
+170 silly get     'x-cache': 'MISS',
+170 silly get     'x-cache-hits': '0',
+170 silly get     'x-timer': 'S1449755833.342577,VS0,VE361',
+170 silly get     vary: 'Accept' } ]
+171 verbose etag https://registry.npmjs.org/repl from cache
+172 verbose get saving repl to /Users/shigeyamajoutarou/.npm/registry.npmjs.org/repl/.cache.json
+173 silly resolveWithNewModule repl@0.1.3 checking installable status
+174 silly cache add args [ 'repl@0.1.3', null ]
+175 verbose cache add spec repl@0.1.3
+176 silly cache add parsed spec Result {
+176 silly cache add   raw: 'repl@0.1.3',
+176 silly cache add   scope: null,
+176 silly cache add   name: 'repl',
+176 silly cache add   rawSpec: '0.1.3',
+176 silly cache add   spec: '0.1.3',
+176 silly cache add   type: 'version' }
+177 silly addNamed repl@0.1.3
+178 verbose addNamed "0.1.3" is a plain semver version for repl
+179 silly mapToRegistry name repl
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npmjs.org/
+182 silly mapToRegistry uri https://registry.npmjs.org/repl
+183 verbose addNameVersion registry:https://registry.npmjs.org/repl not in flight; fetching
+184 verbose get https://registry.npmjs.org/repl not expired, no request
+185 silly cache afterAdd repl@0.1.3
+186 verbose afterAdd /Users/shigeyamajoutarou/.npm/repl/0.1.3/package/package.json not in flight; writing
+187 verbose afterAdd /Users/shigeyamajoutarou/.npm/repl/0.1.3/package/package.json written
+188 http 200 https://registry.npmjs.org/coffee-script
+189 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+189 verbose headers   etag: '"B98EZ5IDN1WGH8CVROSKQ3CHC"',
+189 verbose headers   'content-type': 'application/json',
+189 verbose headers   'cache-control': 'max-age=60',
+189 verbose headers   'content-length': '41291',
+189 verbose headers   'accept-ranges': 'bytes',
+189 verbose headers   date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+189 verbose headers   via: '1.1 varnish',
+189 verbose headers   age: '34',
+189 verbose headers   connection: 'keep-alive',
+189 verbose headers   'x-served-by': 'cache-nrt6125-NRT',
+189 verbose headers   'x-cache': 'HIT',
+189 verbose headers   'x-cache-hits': '1',
+189 verbose headers   'x-timer': 'S1449755833.347656,VS0,VE0',
+189 verbose headers   vary: 'Accept' }
+190 silly get cb [ 200,
+190 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+190 silly get     etag: '"B98EZ5IDN1WGH8CVROSKQ3CHC"',
+190 silly get     'content-type': 'application/json',
+190 silly get     'cache-control': 'max-age=60',
+190 silly get     'content-length': '41291',
+190 silly get     'accept-ranges': 'bytes',
+190 silly get     date: 'Thu, 10 Dec 2015 13:57:13 GMT',
+190 silly get     via: '1.1 varnish',
+190 silly get     age: '34',
+190 silly get     connection: 'keep-alive',
+190 silly get     'x-served-by': 'cache-nrt6125-NRT',
+190 silly get     'x-cache': 'HIT',
+190 silly get     'x-cache-hits': '1',
+190 silly get     'x-timer': 'S1449755833.347656,VS0,VE0',
+190 silly get     vary: 'Accept' } ]
+191 verbose get saving coffee-script to /Users/shigeyamajoutarou/.npm/registry.npmjs.org/coffee-script/.cache.json
+192 silly resolveWithNewModule coffee-script@1.3.3 checking installable status
+193 silly cache add args [ 'coffee-script@1.3.3', null ]
+194 verbose cache add spec coffee-script@1.3.3
+195 silly cache add parsed spec Result {
+195 silly cache add   raw: 'coffee-script@1.3.3',
+195 silly cache add   scope: null,
+195 silly cache add   name: 'coffee-script',
+195 silly cache add   rawSpec: '1.3.3',
+195 silly cache add   spec: '1.3.3',
+195 silly cache add   type: 'version' }
+196 silly addNamed coffee-script@1.3.3
+197 verbose addNamed "1.3.3" is a plain semver version for coffee-script
+198 silly mapToRegistry name coffee-script
+199 silly mapToRegistry using default registry
+200 silly mapToRegistry registry https://registry.npmjs.org/
+201 silly mapToRegistry uri https://registry.npmjs.org/coffee-script
+202 verbose addNameVersion registry:https://registry.npmjs.org/coffee-script not in flight; fetching
+203 verbose get https://registry.npmjs.org/coffee-script not expired, no request
+204 silly cache afterAdd coffee-script@1.3.3
+205 verbose afterAdd /Users/shigeyamajoutarou/.npm/coffee-script/1.3.3/package/package.json not in flight; writing
+206 verbose afterAdd /Users/shigeyamajoutarou/.npm/coffee-script/1.3.3/package/package.json written
+207 silly loadAllDepsIntoIdealTree Finishing
+208 silly idealTree:prePrune SSD1306@0.0.0
+208 silly idealTree:prePrune ├── ansi-regex@2.0.0
+208 silly idealTree:prePrune ├── ansi-styles@2.1.0
+208 silly idealTree:prePrune ├── asn1@0.2.3
+208 silly idealTree:prePrune ├── assert-plus@0.1.5
+208 silly idealTree:prePrune ├── async@1.5.0
+208 silly idealTree:prePrune ├── aws-sign2@0.6.0
+208 silly idealTree:prePrune ├── bindings@1.1.1
+208 silly idealTree:prePrune ├── bl@1.0.0
+208 silly idealTree:prePrune ├── boom@2.10.1
+208 silly idealTree:prePrune ├── caseless@0.11.0
+208 silly idealTree:prePrune ├── chalk@1.1.1
+208 silly idealTree:prePrune ├── coffee-script@1.3.3
+208 silly idealTree:prePrune ├── combined-stream@1.0.5
+208 silly idealTree:prePrune ├── commander@2.9.0
+208 silly idealTree:prePrune ├── core-util-is@1.0.2
+208 silly idealTree:prePrune ├── cryptiles@2.0.5
+208 silly idealTree:prePrune ├── ctype@0.5.3
+208 silly idealTree:prePrune ├── dashdash@1.10.1
+208 silly idealTree:prePrune ├── delayed-stream@1.0.0
+208 silly idealTree:prePrune ├── ecc-jsbn@0.1.1
+208 silly idealTree:prePrune ├── escape-string-regexp@1.0.3
+208 silly idealTree:prePrune ├── extend@3.0.0
+208 silly idealTree:prePrune ├── extsprintf@1.0.2
+208 silly idealTree:prePrune ├── forecast@0.2.1
+208 silly idealTree:prePrune ├── forever-agent@0.6.1
+208 silly idealTree:prePrune ├── form-data@1.0.0-rc3
+208 silly idealTree:prePrune ├── generate-function@2.0.0
+208 silly idealTree:prePrune ├── generate-object-property@1.2.0
+208 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+208 silly idealTree:prePrune ├── har-validator@2.0.3
+208 silly idealTree:prePrune ├── has-ansi@2.0.0
+208 silly idealTree:prePrune ├── hawk@3.1.2
+208 silly idealTree:prePrune ├── hoek@2.16.3
+208 silly idealTree:prePrune ├── http-signature@1.1.0
+208 silly idealTree:prePrune ├── i2c@0.1.4
+208 silly idealTree:prePrune ├── inherits@2.0.1
+208 silly idealTree:prePrune ├── is-my-json-valid@2.12.3
+208 silly idealTree:prePrune ├── is-property@1.0.2
+208 silly idealTree:prePrune ├── is-typedarray@1.0.0
+208 silly idealTree:prePrune ├── isarray@0.0.1
+208 silly idealTree:prePrune ├── isstream@0.1.2
+208 silly idealTree:prePrune ├── jodid25519@1.0.2
+208 silly idealTree:prePrune ├── jsbn@0.1.0
+208 silly idealTree:prePrune ├── json-schema@0.2.2
+208 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+208 silly idealTree:prePrune ├── jsonpointer@2.0.0
+208 silly idealTree:prePrune ├── jsprim@1.2.2
+208 silly idealTree:prePrune ├── lodash-node@2.4.1
+208 silly idealTree:prePrune ├── lodash@3.10.1
+208 silly idealTree:prePrune ├── mime-db@1.20.0
+208 silly idealTree:prePrune ├── mime-types@2.1.8
+208 silly idealTree:prePrune ├── mime@1.2.11
+208 silly idealTree:prePrune ├── moment@2.10.6
+208 silly idealTree:prePrune ├── node-uuid@1.4.7
+208 silly idealTree:prePrune ├── oauth-sign@0.8.0
+208 silly idealTree:prePrune ├── openweathermap@1.0.0
+208 silly idealTree:prePrune ├── pinkie-promise@2.0.0
+208 silly idealTree:prePrune ├── pinkie@2.0.1
+208 silly idealTree:prePrune ├── pngjs@0.4.0
+208 silly idealTree:prePrune ├── process-nextick-args@1.0.6
+208 silly idealTree:prePrune ├── promise-simple@0.1.0
+208 silly idealTree:prePrune ├── qs@5.2.0
+208 silly idealTree:prePrune ├── readable-stream@2.0.4
+208 silly idealTree:prePrune ├── repl@0.1.3
+208 silly idealTree:prePrune ├─┬ request-json@0.4.13
+208 silly idealTree:prePrune │ ├── asn1@0.1.11
+208 silly idealTree:prePrune │ ├── async@0.9.2
+208 silly idealTree:prePrune │ ├── aws-sign2@0.5.0
+208 silly idealTree:prePrune │ ├── bl@0.9.4
+208 silly idealTree:prePrune │ ├── boom@0.4.2
+208 silly idealTree:prePrune │ ├── caseless@0.6.0
+208 silly idealTree:prePrune │ ├── combined-stream@0.0.7
+208 silly idealTree:prePrune │ ├── cryptiles@0.2.2
+208 silly idealTree:prePrune │ ├── delayed-stream@0.0.5
+208 silly idealTree:prePrune │ ├── forever-agent@0.5.2
+208 silly idealTree:prePrune │ ├── form-data@0.1.4
+208 silly idealTree:prePrune │ ├── hawk@1.1.1
+208 silly idealTree:prePrune │ ├── hoek@0.9.1
+208 silly idealTree:prePrune │ ├── http-signature@0.10.1
+208 silly idealTree:prePrune │ ├── mime-types@1.0.2
+208 silly idealTree:prePrune │ ├── oauth-sign@0.4.0
+208 silly idealTree:prePrune │ ├── qs@1.2.2
+208 silly idealTree:prePrune │ ├── readable-stream@1.0.33
+208 silly idealTree:prePrune │ ├── request@2.45.0
+208 silly idealTree:prePrune │ └── sntp@0.2.4
+208 silly idealTree:prePrune ├── request@2.67.0
+208 silly idealTree:prePrune ├── sax@1.1.4
+208 silly idealTree:prePrune ├── sntp@1.0.9
+208 silly idealTree:prePrune ├─┬ sshpk@1.7.1
+208 silly idealTree:prePrune │ └── assert-plus@0.2.0
+208 silly idealTree:prePrune ├── string_decoder@0.10.31
+208 silly idealTree:prePrune ├── stringstream@0.0.5
+208 silly idealTree:prePrune ├── strip-ansi@3.0.0
+208 silly idealTree:prePrune ├── supports-color@2.0.0
+208 silly idealTree:prePrune ├── tough-cookie@2.2.1
+208 silly idealTree:prePrune ├── tunnel-agent@0.4.2
+208 silly idealTree:prePrune ├── tweetnacl@0.13.2
+208 silly idealTree:prePrune ├── underscore@1.2.4
+208 silly idealTree:prePrune ├── util-deprecate@1.0.2
+208 silly idealTree:prePrune ├── verror@1.3.6
+208 silly idealTree:prePrune ├─┬ weather@0.1.0
+208 silly idealTree:prePrune │ ├── request@2.9.153
+208 silly idealTree:prePrune │ └── xml2js@0.1.13
+208 silly idealTree:prePrune ├── xml2js@0.4.15
+208 silly idealTree:prePrune ├── xmlbuilder@4.1.0
+208 silly idealTree:prePrune └── xtend@4.0.1
+209 silly loadIdealTree Finishing
+210 silly currentTree SSD1306@0.0.0
+210 silly currentTree ├── ansi-regex@2.0.0
+210 silly currentTree ├── ansi-styles@2.1.0
+210 silly currentTree ├── asn1@0.2.3
+210 silly currentTree ├── assert-plus@0.1.5
+210 silly currentTree ├── async@1.5.0
+210 silly currentTree ├── aws-sign2@0.6.0
+210 silly currentTree ├── bl@1.0.0
+210 silly currentTree ├── boom@2.10.1
+210 silly currentTree ├── caseless@0.11.0
+210 silly currentTree ├── chalk@1.1.1
+210 silly currentTree ├── combined-stream@1.0.5
+210 silly currentTree ├── commander@2.9.0
+210 silly currentTree ├── core-util-is@1.0.2
+210 silly currentTree ├── cryptiles@2.0.5
+210 silly currentTree ├── ctype@0.5.3
+210 silly currentTree ├── dashdash@1.10.1
+210 silly currentTree ├── delayed-stream@1.0.0
+210 silly currentTree ├── ecc-jsbn@0.1.1
+210 silly currentTree ├── escape-string-regexp@1.0.3
+210 silly currentTree ├── extend@3.0.0
+210 silly currentTree ├── extsprintf@1.0.2
+210 silly currentTree ├── forecast@0.2.1
+210 silly currentTree ├── forever-agent@0.6.1
+210 silly currentTree ├── form-data@1.0.0-rc3
+210 silly currentTree ├── generate-function@2.0.0
+210 silly currentTree ├── generate-object-property@1.2.0
+210 silly currentTree ├── graceful-readlink@1.0.1
+210 silly currentTree ├── har-validator@2.0.3
+210 silly currentTree ├── has-ansi@2.0.0
+210 silly currentTree ├── hawk@3.1.2
+210 silly currentTree ├── hoek@2.16.3
+210 silly currentTree ├── http-signature@1.1.0
+210 silly currentTree ├─┬ i2c@0.1.4
+210 silly currentTree │ ├── bindings@1.1.1
+210 silly currentTree │ ├── coffee-script@1.3.3
+210 silly currentTree │ ├── repl@0.1.3
+210 silly currentTree │ └── underscore@1.2.4
+210 silly currentTree ├── inherits@2.0.1
+210 silly currentTree ├── is-my-json-valid@2.12.3
+210 silly currentTree ├── is-property@1.0.2
+210 silly currentTree ├── is-typedarray@1.0.0
+210 silly currentTree ├── isarray@0.0.1
+210 silly currentTree ├── isstream@0.1.2
+210 silly currentTree ├── jodid25519@1.0.2
+210 silly currentTree ├── jsbn@0.1.0
+210 silly currentTree ├── json-schema@0.2.2
+210 silly currentTree ├── json-stringify-safe@5.0.1
+210 silly currentTree ├── jsonpointer@2.0.0
+210 silly currentTree ├── jsprim@1.2.2
+210 silly currentTree ├── lodash-node@2.4.1
+210 silly currentTree ├── lodash@3.10.1
+210 silly currentTree ├── mime-db@1.20.0
+210 silly currentTree ├── mime-types@2.1.8
+210 silly currentTree ├── mime@1.2.11
+210 silly currentTree ├── moment@2.10.6
+210 silly currentTree ├── node-uuid@1.4.7
+210 silly currentTree ├── oauth-sign@0.8.0
+210 silly currentTree ├── openweathermap@1.0.0
+210 silly currentTree ├── pinkie-promise@2.0.0
+210 silly currentTree ├── pinkie@2.0.1
+210 silly currentTree ├── pngjs@0.4.0
+210 silly currentTree ├── process-nextick-args@1.0.6
+210 silly currentTree ├── promise-simple@0.1.0
+210 silly currentTree ├── qs@5.2.0
+210 silly currentTree ├── readable-stream@2.0.4
+210 silly currentTree ├─┬ request-json@0.4.13
+210 silly currentTree │ ├── asn1@0.1.11
+210 silly currentTree │ ├── async@0.9.2
+210 silly currentTree │ ├── aws-sign2@0.5.0
+210 silly currentTree │ ├── bl@0.9.4
+210 silly currentTree │ ├── boom@0.4.2
+210 silly currentTree │ ├── caseless@0.6.0
+210 silly currentTree │ ├── combined-stream@0.0.7
+210 silly currentTree │ ├── cryptiles@0.2.2
+210 silly currentTree │ ├── delayed-stream@0.0.5
+210 silly currentTree │ ├── forever-agent@0.5.2
+210 silly currentTree │ ├── form-data@0.1.4
+210 silly currentTree │ ├── hawk@1.1.1
+210 silly currentTree │ ├── hoek@0.9.1
+210 silly currentTree │ ├── http-signature@0.10.1
+210 silly currentTree │ ├── mime-types@1.0.2
+210 silly currentTree │ ├── oauth-sign@0.4.0
+210 silly currentTree │ ├── qs@1.2.2
+210 silly currentTree │ ├── readable-stream@1.0.33
+210 silly currentTree │ ├── request@2.45.0
+210 silly currentTree │ └── sntp@0.2.4
+210 silly currentTree ├── request@2.67.0
+210 silly currentTree ├── sax@1.1.4
+210 silly currentTree ├── sntp@1.0.9
+210 silly currentTree ├─┬ sshpk@1.7.1
+210 silly currentTree │ └── assert-plus@0.2.0
+210 silly currentTree ├── string_decoder@0.10.31
+210 silly currentTree ├── stringstream@0.0.5
+210 silly currentTree ├── strip-ansi@3.0.0
+210 silly currentTree ├── supports-color@2.0.0
+210 silly currentTree ├── tough-cookie@2.2.1
+210 silly currentTree ├── tunnel-agent@0.4.2
+210 silly currentTree ├── tweetnacl@0.13.2
+210 silly currentTree ├── util-deprecate@1.0.2
+210 silly currentTree ├── verror@1.3.6
+210 silly currentTree ├─┬ weather@0.1.0
+210 silly currentTree │ ├── request@2.9.153
+210 silly currentTree │ └── xml2js@0.1.13
+210 silly currentTree ├── xml2js@0.4.15
+210 silly currentTree ├── xmlbuilder@4.1.0
+210 silly currentTree └── xtend@4.0.1
+211 silly idealTree SSD1306@0.0.0
+211 silly idealTree ├── ansi-regex@2.0.0
+211 silly idealTree ├── ansi-styles@2.1.0
+211 silly idealTree ├── asn1@0.2.3
+211 silly idealTree ├── assert-plus@0.1.5
+211 silly idealTree ├── async@1.5.0
+211 silly idealTree ├── aws-sign2@0.6.0
+211 silly idealTree ├── bindings@1.1.1
+211 silly idealTree ├── bl@1.0.0
+211 silly idealTree ├── boom@2.10.1
+211 silly idealTree ├── caseless@0.11.0
+211 silly idealTree ├── chalk@1.1.1
+211 silly idealTree ├── coffee-script@1.3.3
+211 silly idealTree ├── combined-stream@1.0.5
+211 silly idealTree ├── commander@2.9.0
+211 silly idealTree ├── core-util-is@1.0.2
+211 silly idealTree ├── cryptiles@2.0.5
+211 silly idealTree ├── ctype@0.5.3
+211 silly idealTree ├── dashdash@1.10.1
+211 silly idealTree ├── delayed-stream@1.0.0
+211 silly idealTree ├── ecc-jsbn@0.1.1
+211 silly idealTree ├── escape-string-regexp@1.0.3
+211 silly idealTree ├── extend@3.0.0
+211 silly idealTree ├── extsprintf@1.0.2
+211 silly idealTree ├── forecast@0.2.1
+211 silly idealTree ├── forever-agent@0.6.1
+211 silly idealTree ├── form-data@1.0.0-rc3
+211 silly idealTree ├── generate-function@2.0.0
+211 silly idealTree ├── generate-object-property@1.2.0
+211 silly idealTree ├── graceful-readlink@1.0.1
+211 silly idealTree ├── har-validator@2.0.3
+211 silly idealTree ├── has-ansi@2.0.0
+211 silly idealTree ├── hawk@3.1.2
+211 silly idealTree ├── hoek@2.16.3
+211 silly idealTree ├── http-signature@1.1.0
+211 silly idealTree ├── i2c@0.1.4
+211 silly idealTree ├── inherits@2.0.1
+211 silly idealTree ├── is-my-json-valid@2.12.3
+211 silly idealTree ├── is-property@1.0.2
+211 silly idealTree ├── is-typedarray@1.0.0
+211 silly idealTree ├── isarray@0.0.1
+211 silly idealTree ├── isstream@0.1.2
+211 silly idealTree ├── jodid25519@1.0.2
+211 silly idealTree ├── jsbn@0.1.0
+211 silly idealTree ├── json-schema@0.2.2
+211 silly idealTree ├── json-stringify-safe@5.0.1
+211 silly idealTree ├── jsonpointer@2.0.0
+211 silly idealTree ├── jsprim@1.2.2
+211 silly idealTree ├── lodash-node@2.4.1
+211 silly idealTree ├── lodash@3.10.1
+211 silly idealTree ├── mime-db@1.20.0
+211 silly idealTree ├── mime-types@2.1.8
+211 silly idealTree ├── mime@1.2.11
+211 silly idealTree ├── moment@2.10.6
+211 silly idealTree ├── node-uuid@1.4.7
+211 silly idealTree ├── oauth-sign@0.8.0
+211 silly idealTree ├── openweathermap@1.0.0
+211 silly idealTree ├── pinkie-promise@2.0.0
+211 silly idealTree ├── pinkie@2.0.1
+211 silly idealTree ├── pngjs@0.4.0
+211 silly idealTree ├── process-nextick-args@1.0.6
+211 silly idealTree ├── promise-simple@0.1.0
+211 silly idealTree ├── qs@5.2.0
+211 silly idealTree ├── readable-stream@2.0.4
+211 silly idealTree ├── repl@0.1.3
+211 silly idealTree ├─┬ request-json@0.4.13
+211 silly idealTree │ ├── asn1@0.1.11
+211 silly idealTree │ ├── async@0.9.2
+211 silly idealTree │ ├── aws-sign2@0.5.0
+211 silly idealTree │ ├── bl@0.9.4
+211 silly idealTree │ ├── boom@0.4.2
+211 silly idealTree │ ├── caseless@0.6.0
+211 silly idealTree │ ├── combined-stream@0.0.7
+211 silly idealTree │ ├── cryptiles@0.2.2
+211 silly idealTree │ ├── delayed-stream@0.0.5
+211 silly idealTree │ ├── forever-agent@0.5.2
+211 silly idealTree │ ├── form-data@0.1.4
+211 silly idealTree │ ├── hawk@1.1.1
+211 silly idealTree │ ├── hoek@0.9.1
+211 silly idealTree │ ├── http-signature@0.10.1
+211 silly idealTree │ ├── mime-types@1.0.2
+211 silly idealTree │ ├── oauth-sign@0.4.0
+211 silly idealTree │ ├── qs@1.2.2
+211 silly idealTree │ ├── readable-stream@1.0.33
+211 silly idealTree │ ├── request@2.45.0
+211 silly idealTree │ └── sntp@0.2.4
+211 silly idealTree ├── request@2.67.0
+211 silly idealTree ├── sax@1.1.4
+211 silly idealTree ├── sntp@1.0.9
+211 silly idealTree ├─┬ sshpk@1.7.1
+211 silly idealTree │ └── assert-plus@0.2.0
+211 silly idealTree ├── string_decoder@0.10.31
+211 silly idealTree ├── stringstream@0.0.5
+211 silly idealTree ├── strip-ansi@3.0.0
+211 silly idealTree ├── supports-color@2.0.0
+211 silly idealTree ├── tough-cookie@2.2.1
+211 silly idealTree ├── tunnel-agent@0.4.2
+211 silly idealTree ├── tweetnacl@0.13.2
+211 silly idealTree ├── underscore@1.2.4
+211 silly idealTree ├── util-deprecate@1.0.2
+211 silly idealTree ├── verror@1.3.6
+211 silly idealTree ├─┬ weather@0.1.0
+211 silly idealTree │ ├── request@2.9.153
+211 silly idealTree │ └── xml2js@0.1.13
+211 silly idealTree ├── xml2js@0.4.15
+211 silly idealTree ├── xmlbuilder@4.1.0
+211 silly idealTree └── xtend@4.0.1
+212 silly generateActionsToTake Starting
+213 silly install generateActionsToTake
+214 silly generateActionsToTake Finishing
+215 silly diffTrees action count 5
+216 silly diffTrees move bindings@1.1.1
+217 silly diffTrees move coffee-script@1.3.3
+218 silly diffTrees move repl@0.1.3
+219 silly diffTrees move underscore@1.2.4
+220 silly diffTrees update i2c@0.1.4
+221 silly decomposeActions action count 28
+222 silly decomposeActions move bindings@1.1.1
+223 silly decomposeActions build bindings@1.1.1
+224 silly decomposeActions install bindings@1.1.1
+225 silly decomposeActions postinstall bindings@1.1.1
+226 silly decomposeActions test bindings@1.1.1
+227 silly decomposeActions move coffee-script@1.3.3
+228 silly decomposeActions build coffee-script@1.3.3
+229 silly decomposeActions install coffee-script@1.3.3
+230 silly decomposeActions postinstall coffee-script@1.3.3
+231 silly decomposeActions test coffee-script@1.3.3
+232 silly decomposeActions move repl@0.1.3
+233 silly decomposeActions build repl@0.1.3
+234 silly decomposeActions install repl@0.1.3
+235 silly decomposeActions postinstall repl@0.1.3
+236 silly decomposeActions test repl@0.1.3
+237 silly decomposeActions move underscore@1.2.4
+238 silly decomposeActions build underscore@1.2.4
+239 silly decomposeActions install underscore@1.2.4
+240 silly decomposeActions postinstall underscore@1.2.4
+241 silly decomposeActions test underscore@1.2.4
+242 silly decomposeActions fetch i2c@0.1.4
+243 silly decomposeActions extract i2c@0.1.4
+244 silly decomposeActions preinstall i2c@0.1.4
+245 silly decomposeActions build i2c@0.1.4
+246 silly decomposeActions install i2c@0.1.4
+247 silly decomposeActions postinstall i2c@0.1.4
+248 silly decomposeActions test i2c@0.1.4
+249 silly decomposeActions finalize i2c@0.1.4
+250 silly executeActions Starting
+251 silly install executeActions
+252 silly doSerial global-install 0
+253 silly doParallel fetch 1
+254 verbose lock using /Users/shigeyamajoutarou/.npm/_locks/staging-52068ad0148734da.lock for /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging
+255 silly doParallel extract 1
+256 silly extract i2c@0.1.4
+257 verbose unbuild node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c
+258 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c is being purged from base /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+259 verbose gentlyRm don't care about contents; nuking /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c
+260 verbose tar unpack /Users/shigeyamajoutarou/.npm/i2c/0.1.4/package.tgz
+261 verbose tar unpacking to /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c
+262 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c is being purged
+263 verbose gentlyRm don't care about contents; nuking /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c
+264 silly gunzTarPerm modes [ '755', '644' ]
+265 silly gunzTarPerm extractEntry
+266 silly gunzTarPerm modified mode [ '', 509, 493 ]
+267 silly gunzTarPerm extractEntry .gitignore
+268 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+269 silly gunzTarPerm extractEntry LICENSE
+270 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+271 silly gunzTarPerm extractEntry README.md
+272 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+273 silly gunzTarPerm extractEntry binding.gyp
+274 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+275 silly gunzTarPerm extractEntry examples/
+276 silly gunzTarPerm modified mode [ 'examples/', 509, 493 ]
+277 silly gunzTarPerm extractEntry examples/accelerometer/
+278 silly gunzTarPerm modified mode [ 'examples/accelerometer/', 509, 493 ]
+279 silly gunzTarPerm extractEntry examples/accelerometer/accel.coffee
+280 silly gunzTarPerm modified mode [ 'examples/accelerometer/accel.coffee', 436, 420 ]
+281 silly gunzTarPerm extractEntry examples/blinkm/
+282 silly gunzTarPerm modified mode [ 'examples/blinkm/', 509, 493 ]
+283 silly gunzTarPerm extractEntry examples/blinkm/blinkm.coffee
+284 silly gunzTarPerm modified mode [ 'examples/blinkm/blinkm.coffee', 436, 420 ]
+285 silly gunzTarPerm extractEntry lib/
+286 silly gunzTarPerm modified mode [ 'lib/', 509, 493 ]
+287 silly gunzTarPerm extractEntry lib/i2c.coffee
+288 silly gunzTarPerm modified mode [ 'lib/i2c.coffee', 436, 420 ]
+289 silly gunzTarPerm extractEntry main.js
+290 silly gunzTarPerm modified mode [ 'main.js', 436, 420 ]
+291 silly gunzTarPerm extractEntry package.json
+292 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+293 silly gunzTarPerm extractEntry src/
+294 silly gunzTarPerm modified mode [ 'src/', 509, 493 ]
+295 silly gunzTarPerm extractEntry src/i2c-dev.c
+296 silly gunzTarPerm modified mode [ 'src/i2c-dev.c', 436, 420 ]
+297 silly gunzTarPerm extractEntry src/i2c-dev.h
+298 silly gunzTarPerm modified mode [ 'src/i2c-dev.h', 436, 420 ]
+299 silly gunzTarPerm extractEntry src/i2c.cc
+300 silly gunzTarPerm modified mode [ 'src/i2c.cc', 436, 420 ]
+301 silly doParallel preinstall 1
+302 silly preinstall i2c@0.1.4 /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c
+303 info lifecycle i2c@0.1.4~preinstall: i2c@0.1.4
+304 silly lifecycle i2c@0.1.4~preinstall: no script for preinstall, continuing
+305 silly doReverseSerial remove 0
+306 silly doSerial move 4
+307 silly move /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/bindings /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/bindings
+308 info lifecycle bindings@1.1.1~preuninstall: bindings@1.1.1
+309 silly lifecycle bindings@1.1.1~preuninstall: no script for preuninstall, continuing
+310 info lifecycle bindings@1.1.1~uninstall: bindings@1.1.1
+311 silly lifecycle bindings@1.1.1~uninstall: no script for uninstall, continuing
+312 verbose unbuild rmStuff bindings@1.1.1 from /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules
+313 verbose unbuild rmStuff in /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules
+314 info lifecycle bindings@1.1.1~postuninstall: bindings@1.1.1
+315 silly lifecycle bindings@1.1.1~postuninstall: no script for postuninstall, continuing
+316 info lifecycle bindings@1.1.1~preinstall: bindings@1.1.1
+317 silly lifecycle bindings@1.1.1~preinstall: no script for preinstall, continuing
+318 silly move /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/coffee-script
+319 info lifecycle coffee-script@1.3.3~preuninstall: coffee-script@1.3.3
+320 silly lifecycle coffee-script@1.3.3~preuninstall: no script for preuninstall, continuing
+321 info lifecycle coffee-script@1.3.3~uninstall: coffee-script@1.3.3
+322 silly lifecycle coffee-script@1.3.3~uninstall: no script for uninstall, continuing
+323 verbose unbuild rmStuff coffee-script@1.3.3 from /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules
+324 verbose unbuild rmStuff in /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules
+325 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/coffee is being gently removed from base /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script
+326 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/cake is being gently removed from base /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script
+327 silly gentlyRm verifying /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script is an npm working directory
+328 silly gentlyRm verifying /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script is an npm working directory
+329 silly gentlyRm containing path /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script is under npm's control, in /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+330 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script/bin/coffee is not under /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script
+331 silly gentlyRm verifying /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script/bin/coffee is an npm working directory
+332 silly gentlyRm containing path /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script is under npm's control, in /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+333 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script/bin/cake is not under /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script
+334 silly gentlyRm verifying /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script/bin/cake is an npm working directory
+335 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/coffee is under npm's control, in /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+336 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script/bin/coffee is controlled by /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script
+337 verbose gentlyRm removing /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/coffee with base /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+338 silly vacuum-fs removing /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/coffee
+339 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/cake is under npm's control, in /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+340 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script/bin/cake is controlled by /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/coffee-script
+341 verbose gentlyRm removing /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/cake with base /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+342 silly vacuum-fs removing /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin/cake
+343 silly vacuum-fs removing /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin
+344 silly vacuum-fs removing /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin
+345 silly vacuum-fs quitting because other entries in /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules
+346 silly vacuum-fs quitting because other entries in /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules
+347 info lifecycle coffee-script@1.3.3~postuninstall: coffee-script@1.3.3
+348 silly lifecycle coffee-script@1.3.3~postuninstall: no script for postuninstall, continuing
+349 info lifecycle coffee-script@1.3.3~preinstall: coffee-script@1.3.3
+350 silly lifecycle coffee-script@1.3.3~preinstall: no script for preinstall, continuing
+351 silly move /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/repl /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/repl
+352 info lifecycle repl@0.1.3~preuninstall: repl@0.1.3
+353 silly lifecycle repl@0.1.3~preuninstall: no script for preuninstall, continuing
+354 info lifecycle repl@0.1.3~uninstall: repl@0.1.3
+355 silly lifecycle repl@0.1.3~uninstall: no script for uninstall, continuing
+356 verbose unbuild rmStuff repl@0.1.3 from /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules
+357 verbose unbuild rmStuff in /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules
+358 info lifecycle repl@0.1.3~postuninstall: repl@0.1.3
+359 silly lifecycle repl@0.1.3~postuninstall: no script for postuninstall, continuing
+360 info lifecycle repl@0.1.3~preinstall: repl@0.1.3
+361 silly lifecycle repl@0.1.3~preinstall: no script for preinstall, continuing
+362 silly move /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/underscore /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/underscore
+363 info lifecycle underscore@1.2.4~preuninstall: underscore@1.2.4
+364 silly lifecycle underscore@1.2.4~preuninstall: no script for preuninstall, continuing
+365 info lifecycle underscore@1.2.4~uninstall: underscore@1.2.4
+366 silly lifecycle underscore@1.2.4~uninstall: no script for uninstall, continuing
+367 verbose unbuild rmStuff underscore@1.2.4 from /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules
+368 verbose unbuild rmStuff in /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules
+369 info lifecycle underscore@1.2.4~postuninstall: underscore@1.2.4
+370 silly lifecycle underscore@1.2.4~postuninstall: no script for postuninstall, continuing
+371 info lifecycle underscore@1.2.4~preinstall: underscore@1.2.4
+372 silly lifecycle underscore@1.2.4~preinstall: no script for preinstall, continuing
+373 silly doSerial finalize 1
+374 silly finalize /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c
+375 silly doSerial build 5
+376 silly build bindings@1.1.1
+377 info linkStuff bindings@1.1.1
+378 silly linkStuff bindings@1.1.1 has /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules as its parent node_modules
+379 verbose linkBins bindings@1.1.1
+380 verbose linkMans bindings@1.1.1
+381 silly build coffee-script@1.3.3
+382 info linkStuff coffee-script@1.3.3
+383 silly linkStuff coffee-script@1.3.3 has /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules as its parent node_modules
+384 verbose linkBins coffee-script@1.3.3
+385 verbose link bins [ { coffee: './bin/coffee', cake: './bin/cake' },
+385 verbose link bins   '/Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.bin',
+385 verbose link bins   false ]
+386 verbose linkMans coffee-script@1.3.3
+387 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.bin/coffee is being purged
+388 silly gentlyRm /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.bin/cake is being purged
+389 verbose gentlyRm don't care about contents; nuking /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.bin/coffee
+390 verbose gentlyRm don't care about contents; nuking /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.bin/cake
+391 silly build repl@0.1.3
+392 info linkStuff repl@0.1.3
+393 silly linkStuff repl@0.1.3 has /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules as its parent node_modules
+394 verbose linkBins repl@0.1.3
+395 verbose linkMans repl@0.1.3
+396 silly build underscore@1.2.4
+397 info linkStuff underscore@1.2.4
+398 silly linkStuff underscore@1.2.4 has /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules as its parent node_modules
+399 verbose linkBins underscore@1.2.4
+400 verbose linkMans underscore@1.2.4
+401 silly build i2c@0.1.4
+402 info linkStuff i2c@0.1.4
+403 silly linkStuff i2c@0.1.4 has /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules as its parent node_modules
+404 verbose linkBins i2c@0.1.4
+405 verbose linkMans i2c@0.1.4
+406 silly doSerial global-link 0
+407 silly doParallel update-linked 0
+408 silly doSerial install 5
+409 silly install bindings@1.1.1 /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/bindings-e48d05314f569015d157bf4f1363b8b4
+410 info lifecycle bindings@1.1.1~install: bindings@1.1.1
+411 silly lifecycle bindings@1.1.1~install: no script for install, continuing
+412 silly install coffee-script@1.3.3 /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/coffee-script-38c2f65cc45cad214ee9a2d5cfc3cb20
+413 info lifecycle coffee-script@1.3.3~install: coffee-script@1.3.3
+414 silly lifecycle coffee-script@1.3.3~install: no script for install, continuing
+415 silly install repl@0.1.3 /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/repl-5ae881d322f6581ce25342fb3ec9ba11
+416 info lifecycle repl@0.1.3~install: repl@0.1.3
+417 silly lifecycle repl@0.1.3~install: no script for install, continuing
+418 silly install underscore@1.2.4 /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/underscore-28caab1edb977161cf2ebbcc67565856
+419 info lifecycle underscore@1.2.4~install: underscore@1.2.4
+420 silly lifecycle underscore@1.2.4~install: no script for install, continuing
+421 silly install i2c@0.1.4 /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging/i2c-620588718086ed3bea7e45f0e6acf99c
+422 info lifecycle i2c@0.1.4~install: i2c@0.1.4
+423 verbose lifecycle i2c@0.1.4~install: unsafe-perm in lifecycle true
+424 verbose lifecycle i2c@0.1.4~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c/node_modules/.bin:/Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/texbin:/Users/shigeyamajoutarou/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin
+425 verbose lifecycle i2c@0.1.4~install: CWD: /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/i2c
+426 silly lifecycle i2c@0.1.4~install: Args: [ '-c', 'node-gyp rebuild' ]
+427 silly lifecycle i2c@0.1.4~install: Returned: code: 1  signal: null
+428 info lifecycle i2c@0.1.4~install: Failed to exec install script
+429 verbose unlock done using /Users/shigeyamajoutarou/.npm/_locks/staging-52068ad0148734da.lock for /Users/shigeyamajoutarou/Jishupuro/JTRWatch/node_modules/.staging
+430 silly rollbackFailedOptional Starting
+431 silly rollbackFailedOptional Finishing
+432 silly runTopLevelLifecycles Starting
+433 silly runTopLevelLifecycles Finishing
+434 silly install printInstalled
+435 warn EPACKAGEJSON SSD1306@0.0.0 No repository field.
+436 warn EPACKAGEJSON SSD1306@0.0.0 No license field.
+437 verbose stack Error: i2c@0.1.4 install: `node-gyp rebuild`
+437 verbose stack Exit status 1
+437 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
+437 verbose stack     at emitTwo (events.js:87:13)
+437 verbose stack     at EventEmitter.emit (events.js:172:7)
+437 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+437 verbose stack     at emitTwo (events.js:87:13)
+437 verbose stack     at ChildProcess.emit (events.js:172:7)
+437 verbose stack     at maybeClose (internal/child_process.js:818:16)
+437 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+438 verbose pkgid i2c@0.1.4
+439 verbose cwd /Users/shigeyamajoutarou/Jishupuro/JTRWatch
+440 error Darwin 14.5.0
+441 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "i2c"
+442 error node v5.1.0
+443 error npm  v3.3.12
+444 error code ELIFECYCLE
+445 error i2c@0.1.4 install: `node-gyp rebuild`
+445 error Exit status 1
+446 error Failed at the i2c@0.1.4 install script 'node-gyp rebuild'.
+446 error Make sure you have the latest version of node.js and npm installed.
+446 error If you do, this is most likely a problem with the i2c package,
+446 error not with npm itself.
+446 error Tell the author that this fails on your system:
+446 error     node-gyp rebuild
+446 error You can get their info via:
+446 error     npm owner ls i2c
+446 error There is likely additional logging output above.
+447 verbose exit [ 1, true ]

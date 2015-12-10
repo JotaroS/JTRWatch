@@ -1,5 +1,6 @@
 //The OLED Display code is adapted from the Adafruit GFX library for Arduino
 var sys = require('util');
+var getWeather = require('./app.js');
 var SSD1306 = require('./ssd1306.js');
 var AFGFX = require('./Adafruit_GFX.js');
 var fs = require('fs');
@@ -34,6 +35,11 @@ ada = new AFGFX(128,64);
 
 var count = 0;
 var r = 0.0;
+function returnResult(err,result){
+    console.log(result);
+    handleresult(result);
+    ada.drawString(55,50,"12˚C 24%",1,1,1);
+}
 function draw(){
     lcdTest.clear();
     for(var i=0;i<1;i++)
@@ -64,7 +70,8 @@ function drawMenu(){
     //time
     ada.drawString(55,32,"00:20",1,2,2);
     //Weather
-    ada.drawString(55,50,"12˚C 24%",1,1,1);
+    //ada.drawString(55,50,"12˚C 24%",1,1,1);
+    getWeather.getRain(returnResult);
     lcdTest.display();
     
 }
