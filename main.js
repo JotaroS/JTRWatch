@@ -50,9 +50,21 @@ function draw(){
 
 function drawMenu(){
     lcdTest.clear();
+    
+    //header
+    ada.drawString(0,0,"JTRWatch",1,1,1);
+    ada.drawString(100,0,"100%",1,1,1);
+    //clock
     ada.drawLine(0,10,128,10,1);
-    ada.drawCircle(37,30,38,1);
-    ada.drawString(55,30,"10:20",1,3,3);
+    ada.drawCircle(28,37,18,1);
+    ada.drawLine(28,37,30,22,1);
+    ada.drawLine(28,37,35,47,1);
+    //cal
+    ada.drawString(55,20,"Mon Dec 21",1,1,1);
+    //time
+    ada.drawString(55,32,"00:20",1,2,2);
+    //Weather
+    ada.drawString(55,50,"12˚C 24%",1,1,1);
     lcdTest.display();
     
 }

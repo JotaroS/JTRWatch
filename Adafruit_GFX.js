@@ -444,7 +444,7 @@ Adafruit_GFX.prototype.drawChar = function(x, y, c, color, bg, size) {
 };
 Adafruit_GFX.prototype.drawString = function(x, y, string, color, bg, size) {
     for(var i=0; i<string.length;i++){
-        this.drawChar(x+(i*(size*6)),y,string.charCodeAt(i),1,size,size);
+        this.drawChar(x+(i*(size*6)),y,string.charCodeAt(i),1,bg,size);
     }
 };
     

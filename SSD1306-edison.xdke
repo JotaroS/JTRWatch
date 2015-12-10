@@ -9,68 +9,68 @@
   "iot-tab": {
     "fileStatus": {
       "Adafruit_GFX.js": {
-        "previousModTime": 1449457846000,
-        "modified": 1449457846000,
+        "previousModTime": 1449479708000,
+        "modified": 1449479708000,
         "seen": true,
         "name": "Adafruit_GFX.js"
       },
       "Edison.js": {
-        "previousModTime": 1410656701000,
-        "modified": 1410656701000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "Edison.js"
       },
       "SSD1306-edison.xdk": {
-        "previousModTime": 1449133580000,
-        "modified": 1449133580000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "SSD1306-edison.xdk"
       },
       "SSD1306-edison.xdke": {
-        "previousModTime": 1449457850000,
-        "modified": 1449457850000,
+        "previousModTime": 1449480603000,
+        "modified": 1449480603000,
         "seen": true,
         "name": "SSD1306-edison.xdke"
       },
       "SSD1306-edison_1.1.0.xdk_bak": {
-        "previousModTime": 1449133580000,
-        "modified": 1449133580000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "SSD1306-edison_1.1.0.xdk_bak"
       },
       "SSD1306-edison_1.1.0.xdke_bak": {
-        "previousModTime": 1449133580000,
-        "modified": 1449133580000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "SSD1306-edison_1.1.0.xdke_bak"
       },
       "glcdfont.js": {
-        "previousModTime": 1396535760000,
-        "modified": 1396535760000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "glcdfont.js"
       },
       "main.js": {
-        "previousModTime": 1449457775000,
-        "modified": 1449457775000,
+        "previousModTime": 1449480620000,
+        "modified": 1449480620000,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1411486339000,
-        "modified": 1411486339000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "package.json"
       },
       "ssd1306.js": {
-        "previousModTime": 1409143845000,
-        "modified": 1409143845000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "ssd1306.js"
       },
       "ssd1306_h.js": {
-        "previousModTime": 1396721384000,
-        "modified": 1396721384000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "ssd1306_h.js"
       },
@@ -93,8 +93,8 @@
         "name": "images/node-logo.png"
       },
       "xdk/project-info.json": {
-        "previousModTime": 1449133580000,
-        "modified": 1449133580000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "xdk/project-info.json"
       },
@@ -141,12 +141,16 @@
         "name": "images/jtr.png"
       },
       "images/jtr-1.png": {
-        "previousModTime": 1449226849000,
-        "modified": 1449226849000,
+        "previousModTime": 1449479457000,
+        "modified": 1449479457000,
         "seen": true,
         "name": "images/jtr-1.png"
       }
     },
-    "boardFileStatus": {}
+    "boardFileStatus": {
+      "main.js": {
+        "previousModTime": 1449480621243
+      }
+    }
   }
 }
