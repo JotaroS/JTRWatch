@@ -28,6 +28,7 @@ ada = new AFGFX(128,64);
 
   //start the slide show
   //slideShow();
+
     while(1)
         drawMenu(); 
     
@@ -35,10 +36,11 @@ ada = new AFGFX(128,64);
 
 var count = 0;
 var r = 0.0;
+var str = ""
 function returnResult(err,result){
     console.log(result);
-    handleresult(result);
-    ada.drawString(55,50,"12˚C 24%",1,1,1);
+        str = result;
+    ada.drawString(55,50,str+"12˚C 24%",1,1,1);
 }
 function draw(){
     lcdTest.clear();
