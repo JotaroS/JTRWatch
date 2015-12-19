@@ -1,5 +1,6 @@
 //The OLED Display code is adapted from the Adafruit GFX library for Arduino
 var sys = require('util');
+var m = require('mraa');
 var getWeather = require('./app.js');
 var SSD1306 = require('./ssd1306.js');
 var AFGFX = require('./Adafruit_GFX.js');
@@ -13,11 +14,20 @@ var ada = null;
 var picIndex = 0;
 var slideShowTimer = 0;
 
+var myPin = new m.Gpio(55);
+
 //////////////////////////////////////////////////////////////////////////////
 // feedparser - https://www.npmjs.org/package/feedparser
 var news_str = new Array(1024);
 news_str[0]="";
+///////////////////////////////////////////////////////////////////////////////
 
+var STATE = {
+ MAIN : 0,
+ NEWS : 1,
+ MAIL : 2,
+};
+var JTRState = STATE.NEWS;
 ///////////////////////////////////////////////////////////////////////////////
 
 Edison.enable_i2c6_breakout(startLCD);
@@ -25,6 +35,7 @@ var day;
 var time;
 function startLCD()
 {
+  console.log('MRAA Version '+m.getVersion());
   lcdTest = new SSD1306();
   ada = new AFGFX(128,64);
   lcdTest.init();
@@ -37,7 +48,7 @@ function startLCD()
 
   //start the slide show
   //slideShow();
-  getNews();
+  
   getWeather.getRain(returnRainResult);
   getWeather.getTemp(returnTempResult);
   getWeather.getWeather(returnWeatherResult);
@@ -48,7 +59,10 @@ function startLCD()
     //while(1)
   drawMenu();
   setInterval(function(){drawMenu();},10); 
-    
+  setInterval(function(){switchState();},20000);
+  setInterval(function(){getNews();},600000);
+  setInterval(function(){vibrate();},10);  
+  setInterval(function(){vibReset();},5000); 
 }
 
 var count = 0;
@@ -70,6 +84,8 @@ function draw(){
     //setTimeout(draw,100); //16.666[ms] = 60[fps]
 }
 var cnt =0;
+
+
 function drawMenu(){
     lcdTest.clear();
     var dt = new Date();
@@ -93,11 +109,29 @@ function drawMenu(){
     //time
     ada.drawString(52,31,""+time,1,2,2);
     //Info max str 13
-    ada.drawString(52,50,news_str[0].substring(cnt/4,cnt/4+13)+str,1,1,1);
+    var info = temp_str +weather_str;
+    if(JTRState ==STATE.NEWS){ada.drawString(52,50,news_str[0].substring(cnt,cnt+13)+info,1,1,1);
+      cnt+=0.5;}
+    if(JTRState ==STATE.MAIN){ada.drawString(52,50,info,1,1,1); cnt = 0;}
+
     ada.drawString(113,39,""+sec,1,1,1);
     //getWeather.getRain(returnResult);
     lcdTest.display();
-    cnt++;
+    
+}
+
+var vibcount = 0;
+function vibrate(){
+  vibcount++;
+  myPin.dir(m.DIR_OUT);
+  if(vibcount<2){
+      myPin.write(1);
+      console.log(vibcount);
+  }
+  else myPin.write(0);
+}
+function vibReset(){
+  vibcount =0;
 }
 function drawInfo(){
     ada.drawString(55,50,temp_str+str+"%",1,1,1);
@@ -184,7 +218,7 @@ feedparser.on('readable', function() {
     if(item = stream.read()) {
         // タイトルとリンクを取得
         console.log(item.title);
-        news_str[count]=item.title;
+        news_str[count]="             "+item.title+"   ";
         count++;
     }
 });
@@ -213,3 +247,183 @@ function displayPNG(fullPathToPNG) {
       lcdTest.display();
     });
 }
+
+
+var statecnt = 0;
+function switchState(){
+  JTRState++;
+  if(JTRState>3)JTRState=STATE.MAIN;
+  console.log('JTRState = '+JTRState);
+}
+
+
+
+
+/////////////////////////////////////////////////
+
+
+
+
+
+var fs = require('fs');
+var readline = require('readline');
+var google = require('googleapis');
+var googleAuth = require('google-auth-library');
+
+var SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
+var TOKEN_DIR = (process.env.HOME || process.env.HOMEPATH ||
+    process.env.USERPROFILE) + '/.credentials/';
+var TOKEN_PATH = TOKEN_DIR + 'gmail-nodejs-quickstart.json';
+
+// Load client secrets from a local file.
+fs.readFile('client_secret.json', function processClientSecrets(err, content) {
+  if (err) {
+    console.log('Error loading client secret file: ' + err);
+    return;
+  }
+  // Authorize a client with the loaded credentials, then call the
+  // Gmail API.
+  authorize(JSON.parse(content), listLabels);
+  authorize(JSON.parse(content), listMessages);
+});
+
+/**
+ * Create an OAuth2 client with the given credentials, and then execute the
+ * given callback function.
+ *
+ * @param {Object} credentials The authorization client credentials.
+ * @param {function} callback The callback to call with the authorized client.
+ */
+function authorize(credentials, callback) {
+  var clientSecret = credentials.installed.client_secret;
+  var clientId = credentials.installed.client_id;
+  var redirectUrl = credentials.installed.redirect_uris[0];
+  var auth = new googleAuth();
+  var oauth2Client = new auth.OAuth2(clientId, clientSecret, redirectUrl);
+
+  // Check if we have previously stored a token.
+  fs.readFile(TOKEN_PATH, function(err, token) {
+    if (err) {
+      getNewToken(oauth2Client, callback);
+    } else {
+      oauth2Client.credentials = JSON.parse(token);
+      callback(oauth2Client);
+    }
+  });
+}
+
+/**
+ * Get and store new token after prompting for user authorization, and then
+ * execute the given callback with the authorized OAuth2 client.
+ *
+ * @param {google.auth.OAuth2} oauth2Client The OAuth2 client to get token for.
+ * @param {getEventsCallback} callback The callback to call with the authorized
+ *     client.
+ */
+function getNewToken(oauth2Client, callback) {
+  var authUrl = oauth2Client.generateAuthUrl({
+    access_type: 'offline',
+    scope: SCOPES
+  });
+  console.log('Authorize this app by visiting this url: ', authUrl);
+  var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  rl.question('Enter the code from that page here: ', function(code) {
+    rl.close();
+    oauth2Client.getToken(code, function(err, token) {
+      if (err) {
+        console.log('Error while trying to retrieve access token', err);
+        return;
+      }
+      oauth2Client.credentials = token;
+      storeToken(token);
+      callback(oauth2Client);
+    });
+  });
+}
+
+/**
+ * Store token to disk be used in later program executions.
+ *
+ * @param {Object} token The token to store to disk.
+ */
+function storeToken(token) {
+  try {
+    fs.mkdirSync(TOKEN_DIR);
+  } catch (err) {
+    if (err.code != 'EEXIST') {
+      throw err;
+    }
+  }
+  fs.writeFile(TOKEN_PATH, JSON.stringify(token));
+  console.log('Token stored to ' + TOKEN_PATH);
+}
+
+/**ロボット　#utmc2
+ * Lists the labels in the user's account.
+ *
+ * @param {google.auth.OAuth2} auth An authorized OAuth2 client.
+ */
+function listLabels(auth) {
+  var gmail = google.gmail('v1');
+  gmail.users.labels.list({
+    auth: auth,
+    userId: 'me',
+  }, function(err, response) {
+    if (err) {
+      console.log('The API returned an error: ' + err);
+      return;
+    }
+    var labels = response.labels;
+    if (labels.length == 0) {
+      console.log('No labels found.');
+    } else {
+      console.log('Labels:');
+      for (var i = 0; i < labels.length; i++) {
+        var label = labels[i];
+        console.log('- %s', label.name);
+      }
+    }
+  });
+}
+
+function listMessages(auth) {
+  var gmail = google.gmail('v1');
+  gmail.users.messages.list({
+    auth: auth,
+    userId: 'me',
+  }, function(err, response) {
+    if (err) {
+      console.log('The API returned an error: ' + err);
+      return;
+    }
+    var messages = response.messages;
+    if (messages.length == 0) {
+      console.log('No messages found.');
+    } else {
+      console.log('messages:');
+      for (var i = 0; i < 1; i++) {
+        var message = messages[i];
+        var _id = message.id;
+        console.log('- %s', message.id);
+        gmail.users.messages.get({
+          auth: auth,
+          userId: 'me',
+          id : _id,
+        },function(err,res){
+          if (err) {
+            console.log('The API returned an error: ' + err);
+          return;
+          }
+          console.log('<<New Mail>>'+res.snippet+res.id);
+        });
+
+
+
+      }
+    }
+  });
+}
+
